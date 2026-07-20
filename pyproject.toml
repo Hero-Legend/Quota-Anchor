@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tempprov-audit"
+version = "1.0.0"
+description = "Auditable biomedical publication ranking under scale, temporal, and cross-source shifts."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Xindong You"},
+  {name = "Yaxun Jia"},
+  {name = "Zhu Yuan"},
+  {name = "Likun Lu"},
+  {name = "Kai Zhang"},
+]
+dependencies = [
+  "numpy>=1.26",
+  "requests>=2.31",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "torch>=2.2",
+  "transformers>=4.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Repository = "https://github.com/Hero-Legend/TempProv-Audit"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

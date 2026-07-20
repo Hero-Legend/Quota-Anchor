@@ -1,0 +1,114 @@
+{
+  "format": "normalized_ctd_provenance_jsonl_gzip_v1",
+  "source_root": "external://ctd-and-pubmed-reconstruction",
+  "document_store": "../universes/ctd_55001_pmids.tsv.gz (PMID/year only; article text is not redistributed)",
+  "unique_document_records": 15107,
+  "document_store_compressed_bytes": 5544668,
+  "splits": {
+    "primary_balanced_pmid_isolated\\dev.jsonl": {
+      "rows": 256,
+      "candidate_instances": 10512,
+      "compressed_bytes": 548731
+    },
+    "primary_balanced_pmid_isolated\\test.jsonl": {
+      "rows": 460,
+      "candidate_instances": 24944,
+      "compressed_bytes": 1218717
+    },
+    "primary_balanced_pmid_isolated\\train.jsonl": {
+      "rows": 995,
+      "candidate_instances": 40460,
+      "compressed_bytes": 2100032
+    },
+    "tail_disjoint_pmid_isolated\\dev.jsonl": {
+      "rows": 139,
+      "candidate_instances": 5312,
+      "compressed_bytes": 242935
+    },
+    "tail_disjoint_pmid_isolated\\test.jsonl": {
+      "rows": 203,
+      "candidate_instances": 9672,
+      "compressed_bytes": 432685
+    },
+    "tail_disjoint_pmid_isolated\\train.jsonl": {
+      "rows": 2217,
+      "candidate_instances": 123230,
+      "compressed_bytes": 4466100
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_0\\dev.jsonl": {
+      "rows": 523,
+      "candidate_instances": 22815,
+      "compressed_bytes": 1153805
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_0\\test.jsonl": {
+      "rows": 495,
+      "candidate_instances": 43799,
+      "compressed_bytes": 1237163
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_0\\train.jsonl": {
+      "rows": 1545,
+      "candidate_instances": 73498,
+      "compressed_bytes": 3751967
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_1\\dev.jsonl": {
+      "rows": 513,
+      "candidate_instances": 25732,
+      "compressed_bytes": 1285621
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_1\\test.jsonl": {
+      "rows": 523,
+      "candidate_instances": 22883,
+      "compressed_bytes": 1157549
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_1\\train.jsonl": {
+      "rows": 1522,
+      "candidate_instances": 89006,
+      "compressed_bytes": 4071951
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_2\\dev.jsonl": {
+      "rows": 537,
+      "candidate_instances": 26653,
+      "compressed_bytes": 1223651
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_2\\test.jsonl": {
+      "rows": 534,
+      "candidate_instances": 27150,
+      "compressed_bytes": 1363763
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_2\\train.jsonl": {
+      "rows": 1503,
+      "candidate_instances": 84248,
+      "compressed_bytes": 3848220
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_3\\dev.jsonl": {
+      "rows": 497,
+      "candidate_instances": 21226,
+      "compressed_bytes": 1066565
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_3\\test.jsonl": {
+      "rows": 545,
+      "candidate_instances": 27794,
+      "compressed_bytes": 1284857
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_3\\train.jsonl": {
+      "rows": 1519,
+      "candidate_instances": 89676,
+      "compressed_bytes": 4132907
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_4\\dev.jsonl": {
+      "rows": 495,
+      "candidate_instances": 43532,
+      "compressed_bytes": 1219779
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_4\\test.jsonl": {
+      "rows": 541,
+      "candidate_instances": 23749,
+      "compressed_bytes": 1200587
+    },
+    "tail_grouped_cv_pmid_isolated\\fold_4\\train.jsonl": {
+      "rows": 1568,
+      "candidate_instances": 74940,
+      "compressed_bytes": 3822313
+    }
+  }
+}

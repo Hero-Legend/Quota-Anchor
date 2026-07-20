@@ -1,0 +1,681 @@
+{
+  "benchmark": "ctd_publication_provenance_rolling_origin",
+  "version": "2026-06-24",
+  "protocol": "publication-year rolling origin with disease-tail-disjoint outer folds",
+  "scope_caution": "Retrospective CTD publication provenance, not CTD curation-date reconstruction or independent-database validation.",
+  "unlabelled_caution": "Non-cited candidates are unlabelled, not confirmed biological negatives.",
+  "seed": 20260624,
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "test_years": [
+    2024,
+    2025
+  ],
+  "source": {
+    "ctd_path": "external://ctd/CTD_chemicals_diseases_20260430.clean.tsv.gz",
+    "ctd_sha256": "18c869091481acccd3d22578c01ee201109fc05b845621b3394a9d285b0b084f",
+    "document_store_path": "not redistributed; reconstruct from data/universes/ctd_55001_pmids.tsv.gz",
+    "document_store_sha256": "ed0b72e94a487ede661337dcfea29add57ca90b56cb551e2876199a5acef8f45",
+    "document_records": 15107,
+    "ctd_data_rows": 9735698,
+    "ctd_direct_evidence_rows": 109144,
+    "retained_direct_pmid_links_before_deduplication": 8233,
+    "recent_pairs": 5597,
+    "recent_heads": 1270,
+    "recent_tails": 570
+  },
+  "candidate_budgets": {
+    "same_tail": 20,
+    "same_head": 10,
+    "random": 20,
+    "minimum_target_year_candidates": 40,
+    "historical_context": 8
+  },
+  "year_summary": {
+    "2022": {
+      "positive_pairs": 1980,
+      "gold_pmids": 662
+    },
+    "2023": {
+      "positive_pairs": 1749,
+      "gold_pmids": 613
+    },
+    "2024": {
+      "positive_pairs": 1457,
+      "gold_pmids": 509
+    },
+    "2025": {
+      "positive_pairs": 1288,
+      "gold_pmids": 351
+    }
+  },
+  "tail_fold_count": 5,
+  "tail_fold_sizes": [
+    112,
+    113,
+    115,
+    113,
+    117
+  ],
+  "unique_tail_assignments": 570,
+  "windows": {
+    "test_2024": {
+      "train_years": [
+        2022
+      ],
+      "dev_year": 2023,
+      "test_year": 2024,
+      "folds": {
+        "fold_0": {
+          "splits": {
+            "train": {
+              "examples": 3381,
+              "positive_pair_years": 1191,
+              "negative_unlabelled_pair_years": 2190,
+              "gold_documents": 1367,
+              "candidate_instances": 138238,
+              "candidate_mean": 40.886719905353445,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 345,
+              "evaluation_years": [
+                2022
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1110,
+              "positive_pair_years": 335,
+              "negative_unlabelled_pair_years": 775,
+              "gold_documents": 415,
+              "candidate_instances": 45438,
+              "candidate_mean": 40.935135135135134,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 113,
+              "evaluation_years": [
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1106,
+              "positive_pair_years": 297,
+              "negative_unlabelled_pair_years": 809,
+              "gold_documents": 364,
+              "candidate_instances": 45690,
+              "candidate_mean": 41.31103074141049,
+              "candidate_min": 40,
+              "candidate_max": 66,
+              "tail_count": 112,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_1": {
+          "splits": {
+            "train": {
+              "examples": 3350,
+              "positive_pair_years": 1159,
+              "negative_unlabelled_pair_years": 2191,
+              "gold_documents": 1379,
+              "candidate_instances": 136778,
+              "candidate_mean": 40.829253731343286,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 342,
+              "evaluation_years": [
+                2022
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1137,
+              "positive_pair_years": 336,
+              "negative_unlabelled_pair_years": 801,
+              "gold_documents": 381,
+              "candidate_instances": 46707,
+              "candidate_mean": 41.07915567282322,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 115,
+              "evaluation_years": [
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1110,
+              "positive_pair_years": 296,
+              "negative_unlabelled_pair_years": 814,
+              "gold_documents": 365,
+              "candidate_instances": 45812,
+              "candidate_mean": 41.27207207207207,
+              "candidate_min": 40,
+              "candidate_max": 63,
+              "tail_count": 113,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_2": {
+          "splits": {
+            "train": {
+              "examples": 3356,
+              "positive_pair_years": 1187,
+              "negative_unlabelled_pair_years": 2169,
+              "gold_documents": 1409,
+              "candidate_instances": 136562,
+              "candidate_mean": 40.69189511323004,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 342,
+              "evaluation_years": [
+                2022
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1104,
+              "positive_pair_years": 365,
+              "negative_unlabelled_pair_years": 739,
+              "gold_documents": 454,
+              "candidate_instances": 45658,
+              "candidate_mean": 41.356884057971016,
+              "candidate_min": 40,
+              "candidate_max": 68,
+              "tail_count": 113,
+              "evaluation_years": [
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1137,
+              "positive_pair_years": 283,
+              "negative_unlabelled_pair_years": 854,
+              "gold_documents": 309,
+              "candidate_instances": 46700,
+              "candidate_mean": 41.072999120492526,
+              "candidate_min": 40,
+              "candidate_max": 62,
+              "tail_count": 115,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_3": {
+          "splits": {
+            "train": {
+              "examples": 3353,
+              "positive_pair_years": 1197,
+              "negative_unlabelled_pair_years": 2156,
+              "gold_documents": 1404,
+              "candidate_instances": 136405,
+              "candidate_mean": 40.681479272293465,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 340,
+              "evaluation_years": [
+                2022
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1140,
+              "positive_pair_years": 349,
+              "negative_unlabelled_pair_years": 791,
+              "gold_documents": 397,
+              "candidate_instances": 46494,
+              "candidate_mean": 40.78421052631579,
+              "candidate_min": 40,
+              "candidate_max": 51,
+              "tail_count": 117,
+              "evaluation_years": [
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1104,
+              "positive_pair_years": 288,
+              "negative_unlabelled_pair_years": 816,
+              "gold_documents": 329,
+              "candidate_instances": 45383,
+              "candidate_mean": 41.10778985507246,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 113,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_4": {
+          "splits": {
+            "train": {
+              "examples": 3351,
+              "positive_pair_years": 1206,
+              "negative_unlabelled_pair_years": 2145,
+              "gold_documents": 1425,
+              "candidate_instances": 136905,
+              "candidate_mean": 40.85496866606983,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 341,
+              "evaluation_years": [
+                2022
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1106,
+              "positive_pair_years": 364,
+              "negative_unlabelled_pair_years": 742,
+              "gold_documents": 433,
+              "candidate_instances": 45276,
+              "candidate_mean": 40.936708860759495,
+              "candidate_min": 40,
+              "candidate_max": 59,
+              "tail_count": 112,
+              "evaluation_years": [
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1140,
+              "positive_pair_years": 293,
+              "negative_unlabelled_pair_years": 847,
+              "gold_documents": 329,
+              "candidate_instances": 47006,
+              "candidate_mean": 41.233333333333334,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 117,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        }
+      }
+    },
+    "test_2025": {
+      "train_years": [
+        2022,
+        2023
+      ],
+      "dev_year": 2024,
+      "test_year": 2025,
+      "folds": {
+        "fold_0": {
+          "splits": {
+            "train": {
+              "examples": 6762,
+              "positive_pair_years": 2241,
+              "negative_unlabelled_pair_years": 4521,
+              "gold_documents": 2599,
+              "candidate_instances": 277097,
+              "candidate_mean": 40.97855664004732,
+              "candidate_min": 40,
+              "candidate_max": 68,
+              "tail_count": 345,
+              "evaluation_years": [
+                2022,
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1110,
+              "positive_pair_years": 296,
+              "negative_unlabelled_pair_years": 814,
+              "gold_documents": 365,
+              "candidate_instances": 45812,
+              "candidate_mean": 41.27207207207207,
+              "candidate_min": 40,
+              "candidate_max": 63,
+              "tail_count": 113,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1106,
+              "positive_pair_years": 258,
+              "negative_unlabelled_pair_years": 848,
+              "gold_documents": 297,
+              "candidate_instances": 45818,
+              "candidate_mean": 41.42676311030741,
+              "candidate_min": 40,
+              "candidate_max": 62,
+              "tail_count": 112,
+              "evaluation_years": [
+                2025
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_1": {
+          "splits": {
+            "train": {
+              "examples": 6700,
+              "positive_pair_years": 2237,
+              "negative_unlabelled_pair_years": 4463,
+              "gold_documents": 2663,
+              "candidate_instances": 274206,
+              "candidate_mean": 40.92626865671642,
+              "candidate_min": 40,
+              "candidate_max": 68,
+              "tail_count": 342,
+              "evaluation_years": [
+                2022,
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1137,
+              "positive_pair_years": 283,
+              "negative_unlabelled_pair_years": 854,
+              "gold_documents": 309,
+              "candidate_instances": 46700,
+              "candidate_mean": 41.072999120492526,
+              "candidate_min": 40,
+              "candidate_max": 62,
+              "tail_count": 115,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1110,
+              "positive_pair_years": 256,
+              "negative_unlabelled_pair_years": 854,
+              "gold_documents": 278,
+              "candidate_instances": 45957,
+              "candidate_mean": 41.402702702702705,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 113,
+              "evaluation_years": [
+                2025
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_2": {
+          "splits": {
+            "train": {
+              "examples": 6712,
+              "positive_pair_years": 2235,
+              "negative_unlabelled_pair_years": 4477,
+              "gold_documents": 2654,
+              "candidate_instances": 273770,
+              "candidate_mean": 40.788140643623365,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 342,
+              "evaluation_years": [
+                2022,
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1104,
+              "positive_pair_years": 288,
+              "negative_unlabelled_pair_years": 816,
+              "gold_documents": 329,
+              "candidate_instances": 45383,
+              "candidate_mean": 41.10778985507246,
+              "candidate_min": 40,
+              "candidate_max": 58,
+              "tail_count": 113,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1137,
+              "positive_pair_years": 263,
+              "negative_unlabelled_pair_years": 874,
+              "gold_documents": 286,
+              "candidate_instances": 46869,
+              "candidate_mean": 41.221635883905016,
+              "candidate_min": 40,
+              "candidate_max": 57,
+              "tail_count": 115,
+              "evaluation_years": [
+                2025
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_3": {
+          "splits": {
+            "train": {
+              "examples": 6706,
+              "positive_pair_years": 2232,
+              "negative_unlabelled_pair_years": 4474,
+              "gold_documents": 2633,
+              "candidate_instances": 273826,
+              "candidate_mean": 40.832985386221296,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 340,
+              "evaluation_years": [
+                2022,
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1140,
+              "positive_pair_years": 293,
+              "negative_unlabelled_pair_years": 847,
+              "gold_documents": 329,
+              "candidate_instances": 47006,
+              "candidate_mean": 41.233333333333334,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 117,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1104,
+              "positive_pair_years": 260,
+              "negative_unlabelled_pair_years": 844,
+              "gold_documents": 299,
+              "candidate_instances": 45612,
+              "candidate_mean": 41.31521739130435,
+              "candidate_min": 40,
+              "candidate_max": 61,
+              "tail_count": 113,
+              "evaluation_years": [
+                2025
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        },
+        "fold_4": {
+          "splits": {
+            "train": {
+              "examples": 6702,
+              "positive_pair_years": 2242,
+              "negative_unlabelled_pair_years": 4460,
+              "gold_documents": 2675,
+              "candidate_instances": 274708,
+              "candidate_mean": 40.98895851984482,
+              "candidate_min": 40,
+              "candidate_max": 68,
+              "tail_count": 341,
+              "evaluation_years": [
+                2022,
+                2023
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "dev": {
+              "examples": 1106,
+              "positive_pair_years": 297,
+              "negative_unlabelled_pair_years": 809,
+              "gold_documents": 364,
+              "candidate_instances": 45690,
+              "candidate_mean": 41.31103074141049,
+              "candidate_min": 40,
+              "candidate_max": 66,
+              "tail_count": 112,
+              "evaluation_years": [
+                2024
+              ],
+              "nonhistorical_year_violations": 0
+            },
+            "test": {
+              "examples": 1140,
+              "positive_pair_years": 251,
+              "negative_unlabelled_pair_years": 889,
+              "gold_documents": 273,
+              "candidate_instances": 47103,
+              "candidate_mean": 41.31842105263158,
+              "candidate_min": 40,
+              "candidate_max": 56,
+              "tail_count": 117,
+              "evaluation_years": [
+                2025
+              ],
+              "nonhistorical_year_violations": 0
+            }
+          },
+          "tail_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          },
+          "gold_pmid_overlap": {
+            "train_vs_dev": 0,
+            "train_vs_test": 0,
+            "dev_vs_test": 0
+          }
+        }
+      }
+    }
+  }
+}

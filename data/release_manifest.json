@@ -1,0 +1,374 @@
+{
+  "release": "TempProv-Audit v1.0.0",
+  "generated": "2026-07-20",
+  "article_text_redistributed": false,
+  "experimental_results_included": false,
+  "files": [
+    {
+      "path": "data/civic/01-Mar-2026-AcceptedClinicalEvidenceSummaries.tsv",
+      "bytes": 3996956,
+      "sha256": "2ee33127c463acb9e5cdc7e9b9c27b97d7c87059c31818b7d0b8eea9dcf4904f",
+      "source_terms": "CIViC CC0 1.0; PubMed IDs only outside the frozen CIViC source TSV"
+    },
+    {
+      "path": "data/civic/queries.jsonl.gz",
+      "bytes": 37712,
+      "sha256": "055a823ea0b04c2d9f97da7eee9b0b540ef6b51242163bfb989449e2e3419e7d",
+      "source_terms": "CIViC CC0 1.0; PubMed IDs only outside the frozen CIViC source TSV"
+    },
+    {
+      "path": "data/ctd_rolling_origin/manifest.json",
+      "bytes": 21945,
+      "sha256": "995c46ba1d5f128bc2805a2ae0334a4cb6c43be6ecbee788e1a5417e623b1333",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_0/dev.jsonl.gz",
+      "bytes": 1933419,
+      "sha256": "3fcd9bc952224931bb05cef510772d64c2279c53bdc14ce0c10f1bad9a8f3a5e",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_0/test.jsonl.gz",
+      "bytes": 1886416,
+      "sha256": "9895bc879de745567c0d9391164c99ac884d6d64ab9a986512ad53f1ca56f5b4",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_0/train.jsonl.gz",
+      "bytes": 5929107,
+      "sha256": "39c4e56c894b8d66239670c1b068e39d16e6734a1475a455644213fad5602df6",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_1/dev.jsonl.gz",
+      "bytes": 1971856,
+      "sha256": "b293297ec47788353b2b2030ec05bad56bfbcbb3e26a46f40a5d9b5db92cba0d",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_1/test.jsonl.gz",
+      "bytes": 1898307,
+      "sha256": "a8d0e4619185e94b9a54f71f83117a93344b027831cd80f937c79bb14b05b03f",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_1/train.jsonl.gz",
+      "bytes": 5894348,
+      "sha256": "bc0b823760b8af2411adaada70cfd53a9d629e3978188d47ed19186d5d3a6265",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_2/dev.jsonl.gz",
+      "bytes": 1913869,
+      "sha256": "c48d39cd94b895577d0836430e21635f4016d15dfe44efbe9e4341f04fd29292",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_2/test.jsonl.gz",
+      "bytes": 1925607,
+      "sha256": "3ab750a2be79a21c8844ba680c9f41e0fe6cd605c6e1044294fd4809fa58eb30",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_2/train.jsonl.gz",
+      "bytes": 5878334,
+      "sha256": "8bce0dadaf2fcbf210f4e8e0ee38eef52047fbb46656bc6e2aa4c323f91b4f4b",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_3/dev.jsonl.gz",
+      "bytes": 1978485,
+      "sha256": "331f7d123126d5bbb33bee8e5d7109ca09871977ea2d92a8e11f2aa5274176af",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_3/test.jsonl.gz",
+      "bytes": 1881731,
+      "sha256": "40f1135880ee873d9ebc8c848fa0c1c60093d82f5d5a990413a6b0d3bd257e4f",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_3/train.jsonl.gz",
+      "bytes": 5853847,
+      "sha256": "2be928fdbdd7c15658fb22b3c7ff04c9193e30ee8fa0104f0516d1c8d9cc2437",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_4/dev.jsonl.gz",
+      "bytes": 1940365,
+      "sha256": "2bd69aa1bc063e651d19cb534e37a6042a7d1ee9ef3d5a1b82f96f9233a4dc0c",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_4/test.jsonl.gz",
+      "bytes": 1953572,
+      "sha256": "833390270af87081cf19b7eb1a1badd05a26164b3a3b256d9b105d8e8a319930",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2024/fold_4/train.jsonl.gz",
+      "bytes": 5851421,
+      "sha256": "033237a145a632de55f6909559f5307c0c57f0b964b55820c8b2a5c083520f59",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_0/dev.jsonl.gz",
+      "bytes": 1898401,
+      "sha256": "720e996c2fa1690249a7bc0cb76293015cc4ab4270daa41b856610a90204fd1b",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_0/test.jsonl.gz",
+      "bytes": 1765659,
+      "sha256": "1287b995f9181a4420cae1d40444f3e2372b4c5c6abec89ffe75c8d1f180d5c7",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_0/train.jsonl.gz",
+      "bytes": 12959864,
+      "sha256": "bf39b05fe3934f720df63c4a09ee7389f9decfabbb13b56dab89f14b15f76222",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_1/dev.jsonl.gz",
+      "bytes": 1925592,
+      "sha256": "789ca866fdde8daf9c42cd44ae500eff29e8819a9e2a527ad4fc42b7b31aa053",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_1/test.jsonl.gz",
+      "bytes": 1757219,
+      "sha256": "fb8f3148c7421f93bba02aee5191151a77caa534097b03ae61c341b65ee0f49f",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_1/train.jsonl.gz",
+      "bytes": 12895095,
+      "sha256": "3e769423ae4ca1f58df002d03ac135659a8c05912ca60ad6194ab75ee5af0c5a",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_2/dev.jsonl.gz",
+      "bytes": 1881739,
+      "sha256": "0b693c8599a768a94d260cf06e125affbe9ce192b39586dcc5e76a19134f5d55",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_2/test.jsonl.gz",
+      "bytes": 1798795,
+      "sha256": "1b6fe95194aa13570734831f2518c82166a9a296636dd59108d98fb5adf047e3",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_2/train.jsonl.gz",
+      "bytes": 12877532,
+      "sha256": "2488a785fa47b566f1f8c25c2e5abc24d59382c86b6b672355de0a1473a23eec",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_3/dev.jsonl.gz",
+      "bytes": 1953588,
+      "sha256": "077f7e63c977bd8bfc56cc4f70d6b9d277198f50623aa78920dfa6a7b0641eeb",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_3/test.jsonl.gz",
+      "bytes": 1763467,
+      "sha256": "36a2c76310d80d4009e5adf2671e3788a0005d49b48198a6664fe36a6c794f44",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_3/train.jsonl.gz",
+      "bytes": 12883530,
+      "sha256": "0bffec6e0e8889b55d1ea01946489e8d7a15d1f9407d6947c9c378299c000fd9",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_4/dev.jsonl.gz",
+      "bytes": 1886341,
+      "sha256": "ce2241723b7396f5dda4beeff847bc1d23980cbe478c5465f1a088b9d85f078f",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_4/test.jsonl.gz",
+      "bytes": 1818670,
+      "sha256": "861985d8e2437e9112f035041fa940c1bfca4164ca44e93a2c521c2908699cae",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_rolling_origin/test_2025/fold_4/train.jsonl.gz",
+      "bytes": 12864469,
+      "sha256": "fdb8871cd6275b90ddd10daf1d1beee9ce8b39dd5bc37bc284795303ca735fa4",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/compact_manifest.json",
+      "bytes": 3648,
+      "sha256": "90d4a5499396c991a92180479aa22db849a08d0900e2b7f42f2e992da60f6758",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/primary_balanced_pmid_isolated/dev.jsonl.gz",
+      "bytes": 548731,
+      "sha256": "0474b00b1a8e667f49a8a215afdd01ef82c48d7e5c3321e7dccb0fc228a548aa",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/primary_balanced_pmid_isolated/test.jsonl.gz",
+      "bytes": 1218717,
+      "sha256": "5b7f7dbf0d493a02e745d26d88cf72e6fe0d6104af500307d354124f62ac2716",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/primary_balanced_pmid_isolated/train.jsonl.gz",
+      "bytes": 2100032,
+      "sha256": "a120de620175ffbec4cdcf92d9fcb9269c7a3f471f09b4cc11b37400218e6efb",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_disjoint_pmid_isolated/dev.jsonl.gz",
+      "bytes": 242935,
+      "sha256": "ac081c9615c09877b4455980b9b2fb58b4cc0da7dbb1904114d95da74dcb8817",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_disjoint_pmid_isolated/test.jsonl.gz",
+      "bytes": 432685,
+      "sha256": "fcc46412e0329ae692b4a98e8bf05ec98b3a80494ccd77403afc3dd8588437cd",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_disjoint_pmid_isolated/train.jsonl.gz",
+      "bytes": 4466100,
+      "sha256": "ccc85ea97ac11755d854940d042ad08c707eb6ddfb7b6f3dabdb6114431222a5",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_0/dev.jsonl.gz",
+      "bytes": 1153805,
+      "sha256": "346fb943075e171623fd9592db0b5e45fabf0445b920ad6eda1b55971b3afe93",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_0/test.jsonl.gz",
+      "bytes": 1237163,
+      "sha256": "e754c1b3a609c6622de12c521f1593964a54a63fb86b7fde7ac410355a4dee44",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_0/train.jsonl.gz",
+      "bytes": 3751967,
+      "sha256": "5bed0cfc3680d5b461557b6b9b22bd368f12f33dca0648cc0c74e55a03bdeab3",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_1/dev.jsonl.gz",
+      "bytes": 1285621,
+      "sha256": "fdbe2cfc95aa52992dafca499f34542e590158d6dd5bc31da3d939da14928ead",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_1/test.jsonl.gz",
+      "bytes": 1157549,
+      "sha256": "be565ac5c8918dca8a4d06a8ad993fb8b67247b3f2890007d34762f312570e1e",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_1/train.jsonl.gz",
+      "bytes": 4071951,
+      "sha256": "09aac7f7a897f837ac99050ab3aeb822da28e28f2692c054fceb1114202e7609",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_2/dev.jsonl.gz",
+      "bytes": 1223651,
+      "sha256": "7a743cc2497651b6b9723a62df116b847a9d4a45e2f19a06306db55e5efa7ab1",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_2/test.jsonl.gz",
+      "bytes": 1363763,
+      "sha256": "fe651c5776ac8322c5e41b9ec107b0e7d479e4ab1e1294c7bbe9cadecf2a82fa",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_2/train.jsonl.gz",
+      "bytes": 3848220,
+      "sha256": "5c6df69cc64700aa75cc332aac857df46e85a08fbff21547123e9e1f4febd0f2",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_3/dev.jsonl.gz",
+      "bytes": 1066565,
+      "sha256": "f089eeb041880367f0e71b58aae2cba1f3648137329ae45175b6235e6903e357",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_3/test.jsonl.gz",
+      "bytes": 1284857,
+      "sha256": "4a1e983172f3a5fceff34f41fe0e67974802fcd130bac148a70a6507461b5414",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_3/train.jsonl.gz",
+      "bytes": 4132907,
+      "sha256": "09a324991bf379aafa2fc68627bc2427e965fa9ce794a36e67ae7442c115b6db",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_4/dev.jsonl.gz",
+      "bytes": 1219779,
+      "sha256": "90cfece8c89d544e3db4f5531acbe847ac1d21dd7b501ec21d091eebcd3de502",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_4/test.jsonl.gz",
+      "bytes": 1200587,
+      "sha256": "74ada5576683e50222f7e9ed6c46019c4ff3e22e8b06472c25db4faa1d403797",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/ctd_sampled/tail_grouped_cv_pmid_isolated/fold_4/train.jsonl.gz",
+      "bytes": 3822313,
+      "sha256": "56aec94cf64fe72bf4f1da9eec6334fb0d9c1c1a7dcce387b2d5674db89f8eeb",
+      "source_terms": "Derived CTD benchmark annotations; CTD custom non-commercial terms apply"
+    },
+    {
+      "path": "data/historical_firewall/all_locked_model_queries.jsonl.gz",
+      "bytes": 38702,
+      "sha256": "591788a5c28fbe58a3dcfa02cc6f1cbdab39c73d6198e5621bd80fffa3120b3b",
+      "source_terms": "Derived CTD/PheKnowLator benchmark annotations; upstream terms apply"
+    },
+    {
+      "path": "data/historical_firewall/expanded_zero_shot_queries.jsonl.gz",
+      "bytes": 27952,
+      "sha256": "b35c0c424009cd74b55777f2a178285c532e4cba95a537393b8304f7ac1082b5",
+      "source_terms": "Derived CTD/PheKnowLator benchmark annotations; upstream terms apply"
+    },
+    {
+      "path": "data/historical_firewall/strict_locked_model_queries.jsonl.gz",
+      "bytes": 10111,
+      "sha256": "7630c11df6a108797983024b6d3db40dddde928f8725063bab809986361a8c22",
+      "source_terms": "Derived CTD/PheKnowLator benchmark annotations; upstream terms apply"
+    },
+    {
+      "path": "data/historical_firewall/summary.json",
+      "bytes": 1872,
+      "sha256": "38be3b02feaeeb6e25550bc1415227bd98c2ee69f429c62d3497ab21c4439f09",
+      "source_terms": "Derived CTD/PheKnowLator benchmark annotations; upstream terms apply"
+    },
+    {
+      "path": "data/universes/civic_2226_pmids.tsv.gz",
+      "bytes": 13084,
+      "sha256": "f3815c53e82d2a480c93ce2e5109b07283fcd37264748c274c349382fda1e2d2",
+      "source_terms": "Identifier inventory; upstream source terms apply"
+    },
+    {
+      "path": "data/universes/ctd_55001_pmids.tsv.gz",
+      "bytes": 295255,
+      "sha256": "471418cc8e5e9cebfb67b5d376713c0c5e6e5bdafd55b9ae84336d0cc634ae59",
+      "source_terms": "Identifier inventory; upstream source terms apply"
+    }
+  ]
+}

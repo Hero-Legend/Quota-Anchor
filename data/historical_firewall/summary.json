@@ -1,0 +1,75 @@
+{
+  "protocol": "true database-version shift; ontology-projected absence in PheKnowLator 2021-11 and direct evidence in CTD 2026-04-30",
+  "target_years": [
+    2024,
+    2025
+  ],
+  "document_store_pmids": 55001,
+  "all_locked_model": {
+    "queries": 1319,
+    "gold_documents": 1326,
+    "unique_gold_documents": 189,
+    "disease_tails": 116,
+    "folds": {
+      "0": 493,
+      "1": 163,
+      "2": 194,
+      "3": 246,
+      "4": 223
+    }
+  },
+  "strict_locked_model": {
+    "queries": 188,
+    "gold_documents": 195,
+    "unique_gold_documents": 149,
+    "disease_tails": 92,
+    "folds": {
+      "0": 8,
+      "1": 40,
+      "2": 67,
+      "3": 45,
+      "4": 28
+    },
+    "years": {
+      "2024": 110,
+      "2025": 78
+    },
+    "direct_evidence": {
+      "marker/mechanism": 110,
+      "therapeutic": 78
+    }
+  },
+  "expanded_zero_shot": {
+    "queries": 578,
+    "gold_documents": 601,
+    "unique_gold_documents": 366,
+    "disease_tails": 180,
+    "folds": {
+      "0": 57,
+      "1": 128,
+      "2": 144,
+      "3": 151,
+      "4": 98
+    },
+    "years": {
+      "2024": 303,
+      "2025": 275
+    },
+    "direct_evidence": {
+      "marker/mechanism": 352,
+      "therapeutic": 226
+    }
+  },
+  "exclusions": {
+    "known_in_2021_snapshot": 33,
+    "no_gold_document_in_store": 40,
+    "ontology_projection_unmapped": 1089,
+    "outside_target_years": 6,
+    "strict_pair_not_in_existing_test": 390
+  },
+  "claim_boundary": {
+    "strict_locked_model": "Existing fold-matched task-trained checkpoints may be evaluated only on this cohort.",
+    "expanded_zero_shot": "Use only methods without CTD task training unless a new temporally isolated model is trained.",
+    "absence": "Absence is asserted only after successful ontology projection; unmapped rows are excluded."
+  }
+}
