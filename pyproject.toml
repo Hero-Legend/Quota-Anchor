@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tempprov-audit"
-version = "1.0.0"
-description = "Auditable biomedical publication ranking under scale, temporal, and cross-source shifts."
+name = "quota-anchor"
+version = "1.1.0"
+description = "Quota-grafting and bi-anchor reranking for biomedical literature provenance recovery."
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -29,7 +29,7 @@ dependencies = [
 dev = ["pytest>=8.0"]
 
 [project.urls]
-Repository = "https://github.com/Hero-Legend/TempProv-Audit"
+Repository = "https://github.com/Hero-Legend/Quota-Anchor"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

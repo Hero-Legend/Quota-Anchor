@@ -1,8 +1,8 @@
 # Quota-Anchor: code and reproduction scope
 
-This repository hosts the original TempProv-Audit benchmark release and the
-Quota-Anchor method code. The repository URL is retained so existing citations
-remain valid. The method implementation lives in
+This repository hosts the Quota-Anchor method code and the original TempProv-Audit
+benchmark release. The project is now named Quota-Anchor; the former repository
+URL redirects to the new location. The method implementation lives in
 [`src/tempprov_audit/quota_anchor`](../src/tempprov_audit/quota_anchor).
 
 ## What is public
@@ -23,7 +23,10 @@ It is not a complete archive of every computational asset used in the study.
 
 ## Dependencies and installation
 
-Use Python 3.10 or newer. The original project dependencies are declared in
+The distribution is named `quota-anchor`; the Python import namespace
+`tempprov_audit` is retained for command and script compatibility.
+
+Use Python 3.10 or newer. The project dependencies are declared in
 `pyproject.toml`; the cached-score modules use NumPy, SciPy and scikit-learn.
 
 ```bash

@@ -1,4 +1,7 @@
-# Reproducing TempProv-Audit
+# Reproducing the legacy TempProv-Audit benchmark
+
+For the current Quota-Anchor method, use [QUOTA_ANCHOR.md](QUOTA_ANCHOR.md).
+The protocol below documents the original benchmark release.
 
 ## Frozen design
 

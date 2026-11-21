@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="docs/assets/tempprov-audit-banner.svg" width="100%" alt="TempProv-Audit: biomedical publication retrieval, temporal stress testing, and provenance auditing">
+  <img src="docs/assets/quota-anchor-banner.svg" width="100%" alt="Quota-Anchor: budget-constrained biomedical literature provenance recovery">
 </p>
 
 <p align="center">
-  <a href="https://github.com/Hero-Legend/TempProv-Audit/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Hero-Legend/TempProv-Audit?display_name=tag&amp;style=flat-square&amp;color=0e7490"></a>
+  <a href="docs/QUOTA_ANCHOR.md"><img alt="Quota-Anchor method guide" src="https://img.shields.io/badge/method-Quota--Anchor-0072B5?style=flat-square"></a>
   <a href="pyproject.toml"><img alt="Python 3.10 or newer" src="https://img.shields.io/badge/Python-%E2%89%A53.10-3776ab?style=flat-square&amp;logo=python&amp;logoColor=white"></a>
-  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/Hero-Legend/TempProv-Audit?style=flat-square&amp;color=685394"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/Hero-Legend/Quota-Anchor?style=flat-square&amp;color=685394"></a>
   <a href="data/release_manifest.json"><img alt="61 verified data artifacts" src="https://img.shields.io/badge/data-61%20verified%20artifacts-b64a2a?style=flat-square"></a>
   <a href="tests"><img alt="Engineering tests" src="https://img.shields.io/badge/tests-engineering%20checks-2e7d32?style=flat-square"></a>
 </p>
@@ -24,9 +24,10 @@
 
 ---
 
-TempProv-Audit releases frozen PMID-level benchmark annotations and executable
-retrieve-and-rerank pipelines for studying how biomedical ranking systems behave
-outside conventional sampled, static evaluation settings.
+Quota-Anchor is a dual-stage framework for budget-constrained biomedical
+literature provenance recovery, combining quota-grafting retrieval with bi-anchor
+reranking and teacher-guided contextual distillation. Its frozen benchmark layer
+is inherited from the original TempProv-Audit release.
 
 ## Quota-Anchor method code
 
@@ -82,8 +83,8 @@ Python 3.10 or newer is required. GPU experiments additionally require a CUDA
 build of PyTorch compatible with the local driver.
 
 ```bash
-git clone https://github.com/Hero-Legend/TempProv-Audit.git
-cd TempProv-Audit
+git clone https://github.com/Hero-Legend/Quota-Anchor.git
+cd Quota-Anchor
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip

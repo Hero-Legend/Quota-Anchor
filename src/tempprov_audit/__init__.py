@@ -1,4 +1,3 @@
-"""TempProv-Audit benchmark and evaluation package."""
+"""Quota-Anchor methods and frozen biomedical provenance benchmark tools."""
 
-__version__ = "1.0.0"
-
+__version__ = "1.1.0"

@@ -1,4 +1,7 @@
-# TempProv-Audit dataset card
+# Quota-Anchor benchmark dataset card
+
+These frozen annotations are inherited unchanged from the original TempProv-Audit
+release; the project rename does not create a new dataset version.
 
 ## Scope
 
