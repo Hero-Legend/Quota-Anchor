@@ -1,0 +1,17 @@
+{
+  "seed": 20261117,
+  "resamples": 10000,
+  "max_seconds": 10800,
+  "pair_C": 1.0,
+  "target_FDP": 0.1,
+  "cluster_sd_coefficient": 0.5,
+  "pair_features": ["bio_mean", "bio_query_top1_margin", "bio_seed_variance", "med_percentile", "bge_percentile"],
+  "query_features": ["mean_seed_top1_raw", "bio_ensemble_z_max", "bio_normalized_top1_top2_margin", "ensemble_top1_seed_variance_ratio", "med_percentile_at_bio_top1", "bge_percentile_at_bio_top1", "med_bge_Top20_Jaccard"],
+  "primary_Holm_families": {
+    "query": ["D04_QueryNormalized_v3 minus original D04 logistic empirical: PooledFDP", "D04_QueryNormalized_v3 minus original D04 logistic empirical: AcceptedRecall"],
+    "pair": ["DePro_QueryNormalized_v3 minus same-fold full-dev Platt: PooledFDP", "DePro_QueryNormalized_v3 minus same-fold full-dev Platt: AcceptedRecall"]
+  },
+  "single_active_cluster_rule": "No across-cluster SD estimate; explicit degenerate status and empirical point-value fallback. Never a cross-disease guarantee.",
+  "calibration_role": "Pair models and thresholds both use complete same-fold dev as user specified; optimistic development estimates. Historical query protocols instead retain other-fold test meta sources.",
+  "target_recall_or_nonempty_requirement": "No enforced Test target. All negative/empty results retained."
+}

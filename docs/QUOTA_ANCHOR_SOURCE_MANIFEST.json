@@ -1,0 +1,78 @@
+{
+  "description": "Quota-Anchor computational source provenance. No experimental outputs are included.",
+  "date": "2026-11-21",
+  "sources_relative_to": "paper3_depro_rank_method",
+  "files": [
+    {
+      "path": "src/tempprov_audit/quota_anchor/metrics.py",
+      "source": "v3_20261117/src/metrics.py",
+      "source_sha256": "b6d0f91f4c54ac954ce910791d73591ec8085467de40f1e86187f7137a656ff8",
+      "published_sha256": "b6d0f91f4c54ac954ce910791d73591ec8085467de40f1e86187f7137a656ff8",
+      "changes": []
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/quota.py",
+      "source": "v3_20261117/src/quota_v3.py",
+      "source_sha256": "5a1de90474f8ec23ea3199f01a3f5b28dcd6550391eae300b9f295c15adbaba6",
+      "published_sha256": "67f20fe4f9867914e06bb4da3df0ce04800f42bbcdfa5c69a051856ae407204b",
+      "changes": [
+        "package-relative metrics import"
+      ]
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/monotonic.py",
+      "source": "v3_20261117/src/monotonic.py",
+      "source_sha256": "0a38b3c65be33b3860038e60899368ff74be70ea877ccdc8a769c57f42e986f4",
+      "published_sha256": "0e0b1c4f5d116632344591bcda85a02bc3ee56f2e26aab5a214688763bad832f",
+      "changes": [
+        "package-relative metrics import"
+      ]
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/risk.py",
+      "source": "v3_20261117/src/risk_pair_v3.py",
+      "source_sha256": "10532bcb7b39aba56ddeebc3438348c638f5b3164c31834f9aece552a24c9ef8",
+      "published_sha256": "10532bcb7b39aba56ddeebc3438348c638f5b3164c31834f9aece552a24c9ef8",
+      "changes": []
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/risk_statistics.py",
+      "source": "v3_20261117/src/risk_statistics.py",
+      "source_sha256": "22e1869a0727712e46255ab21f4440457f05eb7ae3ed41972eff01db81909efc",
+      "published_sha256": "6df7228fe2fa6ec55003c62ee5cb39e807f07683875278bef7d6501f3d4de55d",
+      "changes": [
+        "line endings normalized to LF"
+      ]
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/distill.py",
+      "source": "v2_20261117/src/distill.py",
+      "source_sha256": "7b513253c56a84031cd715772aa1a97856cac1c68ed9ffedb68f0bd4e06460df",
+      "published_sha256": "7b513253c56a84031cd715772aa1a97856cac1c68ed9ffedb68f0bd4e06460df",
+      "changes": []
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/listwise.py",
+      "source": "v2_20261117/src/listwise.py",
+      "source_sha256": "1c64191d0d78569264738f0c924e72b74259bade21be5c84678ec57a02d16afa",
+      "published_sha256": "1c64191d0d78569264738f0c924e72b74259bade21be5c84678ec57a02d16afa",
+      "changes": []
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/config/monotonic.json",
+      "source": "v3_20261117/monotonic_config.json",
+      "source_sha256": "8ae4b15b9fe3301a532c5347b6086c238a584b991b3d26fa47424e2e0725983d",
+      "published_sha256": "8ae4b15b9fe3301a532c5347b6086c238a584b991b3d26fa47424e2e0725983d",
+      "changes": []
+    },
+    {
+      "path": "src/tempprov_audit/quota_anchor/config/risk.json",
+      "source": "v3_20261117/risk_config.json",
+      "source_sha256": "3ddea566dff283dd264d295e65db91731da8465f2fb4dcc3d6f10f0a157e2b4b",
+      "published_sha256": "3ddea566dff283dd264d295e65db91731da8465f2fb4dcc3d6f10f0a157e2b4b",
+      "changes": []
+    }
+  ],
+  "scope": "Algorithm cores and portable cached-score interface; historical orchestration, checkpoints, score caches and teacher responses are not distributed.",
+  "scientific_changes": "none; original internal identifiers are retained inside source code for provenance"
+}

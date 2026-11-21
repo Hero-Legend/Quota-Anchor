@@ -1,0 +1,21 @@
+{
+  "version": "depro-monotonic-v3-20261117",
+  "seed": 20261117,
+  "max_seconds": 10800,
+  "resamples": 10000,
+  "normalization": "query_minmax_fixed",
+  "omega": [0.0, 0.2, 0.35, 0.5, 0.65, 0.8],
+  "eta": [0.0, 0.1, 0.25],
+  "alpha": [0.0, 0.02, 0.05, 0.1, 0.15, 0.25],
+  "beta": [0.0, 0.02, 0.05, 0.1, 0.15, 0.25],
+  "selection": "staged_anchor18_then_residual36_full_legal_dev_positive_MAP",
+  "portable_aux": "lexical",
+  "internal_rich_aux": "mean_unit_modern_huber_separate_ablation",
+  "ood_reference": "unlabelled_full_legal_dev_query_CDF5",
+  "ood_quantile": 0.95,
+  "gamma_primary": 0.0,
+  "gamma_sensitivity": 0.05,
+  "expanded_branch": "fixed_v2_zmed_zbge_lex_025_no_CTD_selection",
+  "external_labels_for_selection": false,
+  "GPU_inference": false
+}

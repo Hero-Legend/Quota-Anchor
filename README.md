@@ -7,11 +7,11 @@
   <a href="pyproject.toml"><img alt="Python 3.10 or newer" src="https://img.shields.io/badge/Python-%E2%89%A53.10-3776ab?style=flat-square&amp;logo=python&amp;logoColor=white"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/Hero-Legend/TempProv-Audit?style=flat-square&amp;color=685394"></a>
   <a href="data/release_manifest.json"><img alt="61 verified data artifacts" src="https://img.shields.io/badge/data-61%20verified%20artifacts-b64a2a?style=flat-square"></a>
-  <a href="tests"><img alt="41 tests passing" src="https://img.shields.io/badge/tests-41%20passing-2e7d32?style=flat-square"></a>
+  <a href="tests"><img alt="Engineering tests" src="https://img.shields.io/badge/tests-engineering%20checks-2e7d32?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <strong>A reproducible audit suite for biomedical publication ranking under candidate-scale, temporal, and cross-source shifts.</strong>
+  <strong>Quota-Anchor method code and frozen biomedical publication-provenance benchmarks.</strong>
 </p>
 
 <p align="center">
@@ -27,6 +27,20 @@
 TempProv-Audit releases frozen PMID-level benchmark annotations and executable
 retrieve-and-rerank pipelines for studying how biomedical ranking systems behave
 outside conventional sampled, static evaluation settings.
+
+## Quota-Anchor method code
+
+The repository also provides Quota-Anchor's quota-grafting, bi-anchor scoring,
+teacher-guided contextual distillation and empirical risk-calibration modules.
+See [the method guide](docs/QUOTA_ANCHOR.md) for portable commands, input schemas,
+frozen configurations and the exact reproduction scope. Existing benchmark data
+remain unchanged. Score caches, trained checkpoints and teacher responses are
+not part of the public release; exact regeneration of every manuscript result
+requires assets beyond the public files.
+
+```bash
+python -m tempprov_audit.quota_anchor.cli --help
+```
 
 > [!IMPORTANT]
 > This repository contains **code and frozen benchmark data only**. It does not
@@ -88,8 +102,9 @@ pytest -q
 
 `verify_release.py` validates every published dataset artifact against
 [`data/release_manifest.json`](data/release_manifest.json) and rejects
-unexpected article-text fields. The current release verifies 61 artifacts and
-passes 41 unit tests.
+unexpected article-text fields. The frozen benchmark manifest covers 61 artifacts.
+Quota-Anchor's synthetic engineering checks are documented in the
+[method guide](docs/QUOTA_ANCHOR.md).
 
 ## 🔁 Reconstruct PubMed document text
 
